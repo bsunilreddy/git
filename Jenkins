@@ -17,8 +17,6 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        
-        }
         stage('artifact') {
             steps {
                 sh 'mvn clean package'
